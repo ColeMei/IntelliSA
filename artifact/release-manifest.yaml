@@ -1,0 +1,110 @@
+# Release Manifest for LLM-IaC-SecEval Paper
+# This file pins exact versions used to generate paper results
+
+version: 1
+paper_tag: v1.0-paper
+generated_utc: <FILL AT RELEASE TIME>
+
+# Repository commits (auto-filled by pin-shas.sh)
+repos:
+  experiments:
+    url: <FILL WITH GITHUB URL>/LLM-IaC-SecEval-Experiments
+    commit: <FILL WITH SHA>
+    branch: main
+  
+  models:
+    url: <FILL WITH GITHUB URL>/LLM-IaC-SecEval-Models
+    commit: <FILL WITH SHA>
+    branch: main
+  
+  iacsec:
+    url: <FILL WITH GITHUB URL>/iacsec
+    commit: <FILL WITH SHA>
+    branch: main
+
+# Model versions and configurations
+models:
+  champion:
+    name: <TOOLNAME>-220M
+    base_model: codet5p-220m
+    source: models/registry.yaml
+    decision_threshold: 0.62
+    huggingface_url: <FILL AFTER MODEL UPLOAD>
+    sha256: <FILL AFTER MODEL UPLOAD>
+  
+  training:
+    framework: pytorch
+    mixed_precision: fp16
+    early_stopping:
+      patience: 2
+      min_delta: 0.001
+
+# Datasets
+datasets:
+  oracle:
+    path: LLM-IaC-SecEval-Experiments/data/oracle-dataset-*
+    total_samples: <FILL WITH COUNT>
+    technologies: [ansible, chef, puppet]
+  
+  pseudo_labeled:
+    claude_sonnet_4:
+      train: 1840
+      val: 230
+      test: 230
+    gpt5:
+      train: 1840
+      val: 230
+      test: 230
+    grok_4_fast:
+      train: 1838
+      val: 230
+      test: 230
+
+# Tooling versions
+tooling:
+  glitch:
+    version: <FILL WITH VERSION OR COMMIT>
+    rules_evaluated: 11
+    noisy_rules: 4  # post-filtered
+    high_precision_rules: 7  # accepted directly
+  
+  python: "3.10+"
+  key_dependencies:
+    torch: <FILL WITH VERSION>
+    transformers: <FILL WITH VERSION>
+    typer: <FILL WITH VERSION>
+
+# Security smells evaluated
+security_smells:
+  - hardcoded_secrets
+  - suspicious_comments
+  - weak_cryptography
+  - insecure_http
+
+# Evaluation metrics
+evaluation:
+  primary_metric: f1_score
+  secondary_metrics:
+    - precision
+    - recall
+    - false_positive_rate
+  
+  threshold_optimization:
+    range: [0.3, 0.7]
+    step: 0.01
+    validation_set: combined_iac_technologies
+
+# Reproduction instructions
+reproduction:
+  checkout_script: artifact/checkout-pinned.sh
+  pipeline_script: artifact/reproduce-paper-results.sh
+  expected_runtime:
+    experiments: "~2 hours"
+    model_training: "~24 hours (with GPU)"
+    evaluation: "~30 minutes"
+
+# Paper results summary (to verify reproduction)
+results_checksum:
+  experiments_metrics: <FILL WITH MD5/SHA>
+  model_metrics: <FILL WITH MD5/SHA>
+  final_evaluation: <FILL WITH MD5/SHA>
