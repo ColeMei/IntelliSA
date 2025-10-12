@@ -28,7 +28,7 @@ Quick navigation to specific resources across all repositories.
   - Model checkpoints: `models/` (not synced to git)
 
 ### iacsec (Toolkit)
-- **Main**: `../03.LLM-IaC-SecEval-Toolkit`
+- **Main**: `../iacsec`
 - **Issues**: (will be GitHub URL after push)
 - **Releases**: (will be GitHub URL after push)
 - **Key locations**:
@@ -42,12 +42,12 @@ Quick navigation to specific resources across all repositories.
 ## Documentation
 
 ### User Guides
-- **Toolkit User Handbook**: `../03.LLM-IaC-SecEval-Toolkit/docs/USER_HANDBOOK.md`
-- **Toolkit Development**: `../03.LLM-IaC-SecEval-Toolkit/docs/DEVELOPMENT_REPORT.md`
-- **Research Roadmap**: `../03.LLM-IaC-SecEval-Toolkit/docs/ROADMAP.md`
+- **Toolkit User Handbook**: `../iacsec/docs/USER_HANDBOOK.md`
+- **Toolkit Development**: `../iacsec/docs/DEVELOPMENT_REPORT.md`
+- **Research Roadmap**: `../iacsec/docs/ROADMAP.md`
 
 ### Technical References
-- **Data Schema**: `../03.LLM-IaC-SecEval-Toolkit/docs/SCHEMA.md`
+- **Data Schema**: `../iacsec/docs/SCHEMA.md`
 - **Model Training**: `../LLM-IaC-SecEval-Models/README.md`
 - **Experiments Overview**: `../LLM-IaC-SecEval-Experiments/README.md`
 
@@ -74,20 +74,10 @@ Quick navigation to specific resources across all repositories.
 - **Model Cards**: `../LLM-IaC-SecEval-Models/models/`
 
 ### Related Tools
-- **GLITCH**: https://github.com/sr-lab/GLITCH
+- **GLITCH**: [placeholder]
 - **Original Paper**: (reference to GLITCH paper)
 
 ### Datasets
 - **Oracle Datasets**: `../LLM-IaC-SecEval-Experiments/data/oracle-dataset-*/`
 - **Training Datasets**: `../LLM-IaC-SecEval-Experiments/data/iac_filter_training/datasets/`
 
-## Contact & Support
-
-- **General Questions**: Open issue in hub repo
-- **Tool Issues**: Open issue in iacsec repo
-- **Model Questions**: Open issue in Models repo
-- **Paper Questions**: Contact lead researcher
-
----
-
-**Note**: GitHub URLs will be updated after repositories are pushed to remote.
