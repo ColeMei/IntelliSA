@@ -23,7 +23,7 @@ Quick navigation to specific resources across all IntelliSA repositories.
 
 ### Models
 
-- **Hugging Face Models**: [colemei/codet5p-220m-iac-security](https://huggingface.co/colemei/codet5p-220m-iac-security)
+- **Hugging Face Models**: [colemei/IntelliSA-220m](https://huggingface.co/colemei/IntelliSA-220m)
 
 ### Datasets
 
