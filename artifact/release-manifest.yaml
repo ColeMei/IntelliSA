@@ -3,21 +3,21 @@
 
 paper_title: "IntelliSA: An Intelligent Analyzer for IaC Security Smell Detection via Rule and Neural Inference"
 paper_tag: v1.0-paper
-generated_date: 2025-10-14
+generated_date: 2025-10-20
 
 # Repository versions (recorded from GitHub remotes)
 repositories:
   experiments:
     github: https://github.com/ColeMei/IntelliSA-Experiments
     commit: 5c645a29e74790dd7b78fbf25387a0c425880813
-  
+
   models:
     github: https://github.com/ColeMei/IntelliSA-Models
-    commit: 9f4b261f46ac8609548c5766f60c878be3894c5a
-  
-  iacsec:
-    github: https://github.com/ColeMei/iacsec
-    commit: d0e48d92b50e1a9626cfc2d785d351ebcf55fbbe
+    commit: 41071998b3c249988047a283d8d283dca133fa63
+
+  cli:
+    github: https://github.com/ColeMei/intellisa-cli
+    commit: 3574e6222cdae551c90775c8862e7abe91bfa14e
 
 # Model used
 model:
