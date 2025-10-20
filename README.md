@@ -34,7 +34,7 @@ Systematic training pipeline for encoder models.
 
 **GitHub**: `IntelliSA-Models`
 
-### 3. iacsec
+### 3. intellisa-cli
 
 Production-ready CLI tool implementing the IntelliSA method.
 
@@ -43,7 +43,7 @@ Production-ready CLI tool implementing the IntelliSA method.
 - Outputs SARIF, JSONL, CSV formats
 - Ready for CI/CD integration
 
-**GitHub**: `iacsec`
+**GitHub**: `intellisa-cli`
 
 ## Paper Materials
 
@@ -66,7 +66,7 @@ Reproduction scripts:
 ## Documentation
 
 - [Links](links.md) - Deep links to sub-repos and resources
-- User guide for CLI Tool: `iacsec/docs/USER_HANDBOOK.md`
+- User guide for CLI Tool: `intellisa-cli/docs/USER_HANDBOOK.md`
 
 ## License
 

@@ -14,10 +14,10 @@ Quick navigation to specific resources across all IntelliSA repositories.
 - **Main**: `../02.IntelliSA-Models`
 - **GitHub**: https://github.com/ColeMei/IntelliSA-Models
 
-### iacsec (Toolkit)
+### intellisa-cli (CLI Toolkit)
 
-- **Main**: `../03.iacsec`
-- **GitHub**: https://github.com/ColeMei/iacsec
+- **Main**: `../03.intellisa`
+- **GitHub**: https://github.com/ColeMei/IntelliSA-CLI
 
 ## External Resources
 
@@ -33,6 +33,6 @@ Quick navigation to specific resources across all IntelliSA repositories.
 ## Contact & Support
 
 - **General Questions**: Open issue in hub repo
-- **Tool Issues**: Open issue in iacsec repo
+- **Tool Issues**: Open issue in intellisa-cli repo
 - **Model Questions**: Open issue in IntelliSA-Models repo
 - **Paper Questions**: Contact lead researcher
