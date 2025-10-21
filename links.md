@@ -14,7 +14,7 @@ Quick navigation to specific resources across all IntelliSA repositories.
 - **Main**: `../02.IntelliSA-Models`
 - **GitHub**: https://github.com/ColeMei/IntelliSA-Models
 
-### intellisa-cli (CLI Toolkit)
+### IntelliSA-CLI (CLI Toolkit)
 
 - **Main**: `../03.intellisa`
 - **GitHub**: https://github.com/ColeMei/IntelliSA-CLI

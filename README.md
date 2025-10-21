@@ -34,7 +34,7 @@ Systematic training pipeline for encoder models.
 
 **GitHub**: `IntelliSA-Models`
 
-### 3. intellisa-cli
+### 3. IntelliSA-CLI
 
 Production-ready CLI tool implementing the IntelliSA method.
 
